@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Static Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" href="blogger.png">
+</head>
+<body>
+    <header>
+        <h1>My Simple Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="fade-in">
+            <h2>Welcome to My Blog</h2>
+            <p>Welcome to My Tech Journey
+                Hello and welcome to my little corner of the internet! This blog is a space where 
+                I share my passion for technology, coding, and everything in between. Whether you’re 
+                just starting your journey in tech or you're a seasoned developer, you’ll find content here 
+                that resonates with your interests.
+                <br>
+                Why I Started This Blog
+                Technology is evolving at a rapid pace, and it’s easy to feel overwhelmed by the sheer 
+                amount of information out there. I created this blog to simplify complex topics, share 
+                practical tips, and inspire others to explore the endless possibilities in the tech world.
+                <br>
+                What You’ll Find Here
+                <br>
+                Tutorials: Step-by-step guides on web development, programming languages, and cloud technologies.
+                Insights: Analysis of tech trends, tools, and best practices.
+                Personal Projects: Stories about the challenges and successes I’ve encountered while building 
+                exciting projects.
+                Tips & Tricks: Productivity hacks for developers, debugging tips, and advice on improving your 
+                coding skills.
+                Who This Blog Is For
+                Whether you're a beginner eager to write your first line of code or an experienced professional 
+                looking to refine your craft, this blog is for you. I believe learning should be a collaborative 
+                and enjoyable experience, and that’s exactly the environment I aim to create here.
+                <br>
+                Join the Community
+                Your feedback and ideas matter! I encourage you to leave comments, ask questions, and share your 
+                experiences. Let’s grow and learn together as a community of tech enthusiasts.
+                <br>
+                Thank you for stopping by, and I hope you find value in the content I share. Remember, the best 
+                way to predict the future is to create it. So, let’s start building!
+            </p>
+            <button onclick="showAlert()">Click Me!</button>
+        </section>
+
+        <section id="about" class="fade-in">
+            <h2>About Me</h2>
+            <p>
+                Enthusiastic and detail-oriented Computer Science graduate with a strong foundation in programming, 
+                data structures, and software development. Eager to bring my technical expertise, analytical mindset, 
+                and problem-solving abilities to a forward-thinking organization. Skilled and passionate about 
+                leveraging technology to solve real-world challenges. Dedicated to continuous learning and committed 
+                to driving meaningful impact in a collaborative environment.
+            </p>
+        </section>
+
+        <section id="contact" class="fade-in contact-section">
+            <h2>Contact-Me</h2>
+            <p>Feel free to reach out! I'd love to hear from you.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Simple Blog Page</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
