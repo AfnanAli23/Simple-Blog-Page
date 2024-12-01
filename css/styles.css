@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Mesmerizing gradient */
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #243B55, #2C5364); /* Slightly darker gradient for header */
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    color: #FFB703; /* Sunrise Yellow for the blog title */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #36D1DC; /* Sky Blue links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #92FE9D; /* Spring Green on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    background: linear-gradient(135deg, #243B55, #2C5364); /* Semi-transparent dark cyan */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease both;
+}
+
+section h2 {
+    color: #FFB703;
+}
+
+button {
+    background: linear-gradient(135deg, #FF7E5F, #FEB47B); /* Vibrant button gradient */
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #FEB47B, #FF7E5F); /* Reversed gradient */
+    box-shadow: 0 6px 12px rgba(255, 126, 95, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #243B55, #2C5364);
+    color: #A9A9A9;
+    font-size: 14px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Contact Section Styling */
+.contact-section {
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); Mesmerizing gradient */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Heading */
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #F9F871; /* Accent color for heading */
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Glowing Effect on Focus */
+form input:focus,
+form textarea:focus {
+    box-shadow: 0 6px 12px rgba(106, 17, 203, 0.6);
+    transform: translateY(-2px);
+}
