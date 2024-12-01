@@ -1,0 +1,13 @@
+function showAlert() {
+    alert("\u00A9 All Rights Reserved");
+}
+
+// Optional: Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
